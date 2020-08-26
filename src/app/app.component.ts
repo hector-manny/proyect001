@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  nombre = 'Rodriguez Pablo';
-  edad = 40;
-  sueldos = [1700, 1600, 1900];
+  contador = 0;
+
+  incrementar(){
+    this.contador++;
+  }
+
+  decrementar(){
+   this.contador--;
+  }
 
   }
 

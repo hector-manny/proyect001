@@ -10,10 +10,14 @@ exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.nombre = 'Rodriguez Pablo';
-        this.edad = 40;
-        this.sueldos = [1700, 1600, 1900];
+        this.contador = 0;
     }
+    AppComponent.prototype.incrementar = function () {
+        this.contador++;
+    };
+    AppComponent.prototype.decrementar = function () {
+        this.contador--;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',
